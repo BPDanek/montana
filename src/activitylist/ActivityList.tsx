@@ -1,12 +1,21 @@
 import React from "react";
 
 
-import { Text } from "react-native"
+import { StyleSheet, Text, View } from "react-native"
 
 const ActivityList = () => {
     return (
-        <Text>this is activitylist</Text>
+        <View style={styling.container}>
+            <Text>this is activitylist</Text>
+        </View>
     );
 }
+
+const styling = StyleSheet.create({
+    container: {
+        flexDirection: 'row',
+        justifyContent: 'space-around'
+    }
+});
 
 export default ActivityList;

@@ -1,11 +1,25 @@
 import React from "react";
 
-import { Text } from "react-native"
+import { StyleSheet, Text, View} from "react-native"
 
 const HeaderBox = () => {
     return (
-        <Text>this is headerbox</Text>
+        <View style={styling.container}>
+            <View>
+                <Text>Face side</Text>
+            </View>
+            <View>
+                <Text>Map side</Text>
+            </View>
+        </View>
     );
 }
+
+const styling = StyleSheet.create({
+    container: {
+        flexDirection: 'row',
+        justifyContent: 'space-evenly'
+    },
+});
 
 export default HeaderBox;
