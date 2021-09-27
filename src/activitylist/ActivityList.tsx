@@ -2,6 +2,7 @@ import React from "react";
 
 
 import { StyleSheet, Text, View } from "react-native"
+import { getDebugColor } from "../devmode";
 
 const ActivityList = () => {
     return (
@@ -13,8 +14,10 @@ const ActivityList = () => {
 
 const styling = StyleSheet.create({
     container: {
-        flexDirection: 'row',
-        justifyContent: 'space-around'
+        flexDirection: 'row',   
+        justifyContent: 'space-around',
+        backgroundColor: getDebugColor(),
+
     }
 });
 
