@@ -36,4 +36,4 @@ const styling = StyleSheet.create({
     }
 });
 
-export default HeaderBox;s
+export default HeaderBox;
