@@ -1,5 +1,5 @@
 
-const DEVMODE_COLOR_DEBUG = false;
+const DEVMODE_COLOR_DEBUG = true;
 
 /*
     returns a new color if we are debugging colors

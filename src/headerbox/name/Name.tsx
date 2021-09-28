@@ -18,6 +18,7 @@ const styling = StyleSheet.create({
         justifyContent: 'space-evenly',
         backgroundColor: '#F0F0F0',
         // margin: 
+        
     },
 });
 

@@ -25,9 +25,6 @@ const styling = StyleSheet.create({
 
         // spacing
         margin: 5,
-
-        // debug
-        backgroundColor: getDebugColor(),
     }
 });
 

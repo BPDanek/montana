@@ -1,14 +1,13 @@
 import React from "react";
 
-import { StyleSheet, Text, View} from "react-native"
-import { getColor, getDebugColor } from "../devmode";
+import { StyleSheet, Text, View, Image } from "react-native"
+import { getDebugColor } from "../devmode";
+import Faceside from "./faceside/Faceside";
 
 const HeaderBox = () => {
     return (
         <View style={styling.container}>
-            <View style={styling.faceSide}>
-                <Text>Face side</Text>
-            </View>
+            <Faceside />
             <View style={styling.mapSide}>
                 <Text>Map side</Text>
             </View>
@@ -20,16 +19,21 @@ const styling = StyleSheet.create({
     container: {
         // flex params 
         flexDirection: 'row',
-        justifyContent: 'space-evenly',
-        backgroundColor: getDebugColor()
+        justifyContent: 'space-between',
+
+        // debug
+        backgroundColor: getDebugColor(),
     },
     faceSide: {
-        backgroundColor: getDebugColor()
-
+        // backgroundColor: getDebugColor(),
+        backgroundColor: '#C4C4C4',
+    },
+    profilePhoto: {
+        borderRadius: 20,
     },
     mapSide: {
         backgroundColor: getDebugColor()
     }
 });
 
-export default HeaderBox;
+export default HeaderBox;s

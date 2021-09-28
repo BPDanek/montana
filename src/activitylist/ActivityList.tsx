@@ -16,8 +16,6 @@ const styling = StyleSheet.create({
     container: {
         flexDirection: 'row',   
         justifyContent: 'space-around',
-        backgroundColor: getDebugColor(),
-
     }
 });
 
