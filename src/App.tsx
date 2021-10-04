@@ -6,6 +6,9 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { getDebugColor } from './devmode';
 
+// metro: npx react-native start
+// xcode: npx react-native run-ios
+
 const App = () => {
     return (
         <View style={styling.container}>

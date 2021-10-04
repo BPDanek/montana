@@ -1,6 +1,7 @@
 
 const DEVMODE_COLOR_DEBUG = true;
 
+export const montana_grey = '#F0F0F0'
 /*
     returns a new color if we are debugging colors
 */

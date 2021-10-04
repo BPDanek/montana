@@ -1,6 +1,7 @@
 import React from "react";
 
 import { StyleSheet, Text, View} from "react-native"
+import { montana_grey } from "../../devmode";
 
 const HARDCODED_NAME = 'Benjamin P Danek' //todo
 
@@ -16,9 +17,7 @@ const styling = StyleSheet.create({
     container: {
         flexDirection: 'row',
         justifyContent: 'space-evenly',
-        backgroundColor: '#F0F0F0',
-        // margin: 
-        
+        backgroundColor: montana_grey,       
     },
 });
 

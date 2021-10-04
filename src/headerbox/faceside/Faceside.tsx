@@ -1,25 +1,24 @@
 import React from 'react';
 import { Image, Text, View, StyleSheet } from "react-native"
+import { getDebugColor, montana_grey } from '../../devmode';
 
-import defaultPhoto from '../../assets/defaultPhoto.png'
-const profilePhoto = Image.resolveAssetSource(defaultPhoto).uri;
+const profilePhoto = require('../../assets/defaultPhoto.png');
 
 const Faceside = () => {
     return (
-        <View style={styling.image}>
-            <Text>Face side</Text>
+        <View style={styling.container}>
             <Image
-                style={styling.image}
-                source={{uri: profilePhoto}}
-                defaultSource={{uri: profilePhoto}} 
+                source={profilePhoto}
+                defaultSource={profilePhoto} 
             />
         </View>
     );
 }
 
 const styling = StyleSheet.create({
-    image: { 
-        backgroundColor: '#F09090'
+    container: {
+        borderRadius: 10,
+        backgroundColor: montana_grey,
     }
 })
 
