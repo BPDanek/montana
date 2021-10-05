@@ -1,10 +1,12 @@
 import React from "react";
 
-
-import { StyleSheet, Text, View } from "react-native"
-import { getDebugColor } from "../devmode";
+import { StyleSheet, Text, View } from "react-native";
+import * as fakeAcitivtyJson from './activityListFake.json';
 
 const ActivityList = () => {
+
+    const fakeAcitivtyData = fakeAcitivtyJson;
+
     return (
         <View style={styling.container}>
             <Text>this is activitylist</Text>

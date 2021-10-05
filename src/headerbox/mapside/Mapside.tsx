@@ -1,6 +1,5 @@
 import React from 'react';
-import { Image, Text, View, StyleSheet } from "react-native"
-import { getDebugColor } from '../../devmode';
+import { Image, Text, View, StyleSheet, Button } from "react-native"
 
 // As of now, we cannot make an actual map view & pin drop for users, we would have to make some proprietary version of that.
 // To add location specific value to the customer, however, we can simply  add a textual location descriptor.
@@ -22,15 +21,20 @@ const Mapside = () => {
 
     return (
         <View style={styling.container}>
-            <Text>
-                {location.title}
-            </Text>
-            <Text>
-                {location.city}, {location.state}
-            </Text>
-            <Text style={{ fontStyle: 'italic'}}>
-                {location.updated} minutes
-            </Text>
+            <View>
+                <Text>
+                    {location.title}
+                </Text>
+                <Text>
+                    {location.city}, {location.state}
+                </Text>
+                <Text style={{ fontStyle: 'italic'}}>
+                    {location.updated} minutes
+                </Text>
+            </View>
+            <View>
+                <Text>[update location]</Text>
+            </View>
         </View>
     );
 }
